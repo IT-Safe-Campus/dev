@@ -1,5 +1,5 @@
 <?php
 
-	echo('HELLO FROM PHP FROM GIT FROM STAGING");
+	echo("HELLO FROM PHP FROM GIT FROM STAGING");
 	
 ?>
