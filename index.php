@@ -1,5 +1,5 @@
 <?php
 
-	echo('HELLO FROM PHP FROM GIT");
+	echo('HELLO FROM PHP FROM GIT V2");
 	
 ?>
