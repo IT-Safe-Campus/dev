@@ -1,1 +1,1 @@
-<?php `git pull`;<br>
+<?php `git pull`;
