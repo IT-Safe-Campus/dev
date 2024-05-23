@@ -67,6 +67,42 @@
             <?php echo $unCours['description_2']; ?>
         </div>
 
+        <!-- Conteneur du titre du chapitre 3 -->
+        <div class="titre_chapitre">
+            <h2 style="font-size: 200%;"><?php echo $unCours['chap_3']; ?></h2>
+        </div>
+
+        <div class="separation"><hr style="margin-left: -46%;margin-top: -9%;width: 70%;"></div>
+
+        <!-- Conteneur de la description du chapitre 3 -->
+        <div class="description">
+            <?php echo $unCours['description_3']; ?>
+        </div>
+
+        <!-- Conteneur du titre du chapitre 4 -->
+        <div class="titre_chapitre">
+            <h2 style="font-size: 200%;"><?php echo $unCours['chap_4']; ?></h2>
+        </div>
+
+        <div class="separation"><hr style="margin-left: -46%;margin-top: -9%;width: 70%;"></div>
+
+        <!-- Conteneur de la description du chapitre 4 -->
+        <div class="description">
+            <?php echo $unCours['description_4']; ?>
+        </div>
+
+        <!-- Conteneur du titre du chapitre 6 -->
+        <div class="titre_chapitre">
+            <h2 style="font-size: 200%;"><?php echo $unCours['chap_6']; ?></h2>
+        </div>
+
+        <div class="separation"><hr style="margin-left: -46%;margin-top: -9%;width: 70%;"></div>
+
+        <!-- Conteneur de la description du chapitre 6 -->
+        <div class="description">
+            <?php echo $unCours['description_6']; ?>
+        </div>
+
     <?php
         }
     ?>
