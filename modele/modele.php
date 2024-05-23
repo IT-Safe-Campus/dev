@@ -7,7 +7,7 @@
 		public function __construct(){
 			$this -> pdo = null;
 			try{
-				$this -> pdo = new PDO("mysql:host=db;dbname=itsafecampus","user","&D37AhbyfK", array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+				$this -> pdo = new PDO("mysql:host=db;dbname=itsafecampus","user","3ss@j4TN&65@", array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 			}
 
 			//affiche un message si on arrive pas à se connecter à la BDD
