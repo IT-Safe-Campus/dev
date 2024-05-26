@@ -106,6 +106,7 @@
     <?php
         }
     ?>
+   
 
     <!-- Conteneur du bouton pour commencer le quizz du cours -->
     <div class="div_bouttonQuizz">

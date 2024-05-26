@@ -107,6 +107,8 @@
                     break;
             case 10 : require_once("accueil_connecte.php");
                     break;
+            case 11 : require_once("reponse.php");
+                    break;
             case 100 : header("Location: index.php");
                     break;
             default :
