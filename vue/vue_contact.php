@@ -10,7 +10,7 @@
                 <!-- Conteneur du réseau social : Instagram -->
                 <div class="onglets_reseau">
                     <div>
-                        <a href="index.php?page=3">
+                        <a href="https://www.instagram.com/itsafecampus.fr/">
                             <svg xmlns="http://www.w3.org/2000/svg" width=" 25%" height="25%" viewBox="0 0 81 81"
                             fill="none">
                                 <path d="M80.38 40.19C80.38 17.9937 62.3863 0 40.19 0C17.9937 0 0 17.9937 0 40.19C0
@@ -68,36 +68,13 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="desc_reseau">
-                        ???
-                    </div>
-                </div>
-
-                <!-- Conteneur du réseau social : Facebook -->
-                <div class="onglets_reseau">
-                    <div>
-                        <a href="index.php?page=3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width=" 25%" height="25%"
-                            viewBox="0 0 81 81" fill="none">
-                                <path d="M40.19 80.38C62.3863 80.38 80.38 62.3863 80.38 40.19C80.38 17.9937 62.3863 0
-                                40.19 0C17.9937 0 0 17.9937 0 40.19C0 62.3863 17.9937 80.38 40.19 80.38Z"
-                                fill="#3C5A99"/>
-                                <path d="M43.3141 60.2851V41.9798H49.4839L50.4102 34.8131H43.3141V30.2524C43.3141
-                                28.1802 43.8871 26.7751 46.8543 26.7751H50.6142V20.3855C49.9627 20.2991 47.7177 20.1029
-                                45.1038 20.1029C39.6483 20.1029 35.9119 23.4311 35.9119
-                                29.546V34.8209H29.7657V41.9876H35.9119V60.2851H43.3141Z" fill="white"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="desc_reseau">
-                        ???
-                    </div>
+                    <div class="desc_reseau">Instagram</div>
                 </div>
 
                 <!-- Conteneur du réseau social : LinkedIn -->
                 <div class="onglets_reseau">
                     <div>
-                        <a href="index.php?page=3">
+                        <a href="https://www.linkedin.com/in/it-safecampus-1b389b309/">
                             <svg xmlns="http://www.w3.org/2000/svg" width=" 25%" height="25%"
                             viewBox="0 0 81 81" fill="none">
                                 <path d="M40.19 80.38C62.3863 80.38 80.38 62.3863 80.38 40.19C80.38 17.9937 62.3863 0
@@ -117,15 +94,13 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="desc_reseau">
-                        ???
-                    </div>
+                    <div class="desc_reseau">LinkedIn</div>
                 </div>
 
                 <!-- Conteneur du réseau social : Youtube -->
                 <div class="onglets_reseau">
                     <div>
-                        <a href="index.php?page=3">
+                        <a href="https://www.youtube.com/channel/UCzEyLf58tjCxfby9GJ77q_g">
                             <svg xmlns="http://www.w3.org/2000/svg" width=" 25%" height="25%"
                             viewBox="0 0 81 81" fill="none">
                                 <path d="M40.19 80.38C62.3863 80.38 80.38 62.3863 80.38 40.19C80.38 17.9937 62.3863 0
@@ -139,9 +114,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="desc_reseau">
-                        ???
-                    </div>
+                    <div class="desc_reseau">Youtube</div>
                 </div>
         </div>
 
@@ -166,7 +139,7 @@
                     <div class="fiche_contact">
                         <div class="titre_contact">Message</div>
                         <div class="saisie_contact">
-                            <textarea type="text" id="message" name="message"
+                            <textarea type="text" id="messageC" name="message"
                             placeholder="Bonjour, je vous contacte car...." required style="height: 80%;"> </textarea>
                         </div>
                     </div>

@@ -107,6 +107,8 @@
                     break;
             case 10 : require_once("accueil_connecte.php");
                     break;
+            case 11 : require_once("reponse.php");
+                    break;
             case 100 : header("Location: index.php");
                     break;
             default :
@@ -134,7 +136,7 @@
 
                 <div style="display: flex; width: 110%; align-items: center; gap: 5%; margin-left: 8%;">
                     <!-- Contenu de l'image : Instagram -->
-                    <a href="index.php?page=3">
+                    <a href="https://www.instagram.com/itsafecampus.fr/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81"
                         fill="none" style="width: 60%;">
                             <path d="M80.38 40.19C80.38 17.9937 62.3863 0 40.19 0C17.9937 0 0 17.9937 0 40.19C0
@@ -192,21 +194,8 @@
                         </svg>
                     </a>
 
-                    <!-- Contenu de l'image : Facebook -->
-                    <a href="index.php?page=3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81"
-                        fill="none" style="width: 60%;">
-                            <path d="M40.19 80.38C62.3863 80.38 80.38 62.3863 80.38 40.19C80.38 17.9937 62.3863 0 40.19
-                            0C17.9937 0 0 17.9937 0 40.19C0 62.3863 17.9937 80.38 40.19 80.38Z" fill="#3C5A99"/>
-                            <path d="M43.3141 60.2851V41.9798H49.4839L50.4102 34.8131H43.3141V30.2524C43.3141 28.1802
-                            43.8871 26.7751 46.8543 26.7751H50.6142V20.3855C49.9627 20.2991 47.7177 20.1029 45.1038
-                            20.1029C39.6483 20.1029 35.9119 23.4311 35.9119
-                            29.546V34.8209H29.7657V41.9876H35.9119V60.2851H43.3141Z" fill="white"/>
-                        </svg>
-                    </a>
-
                     <!-- Contenu de l'image : LinkeIn -->
-                    <a href="index.php?page=3">
+                    <a href="https://www.linkedin.com/in/it-safecampus-1b389b309/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81" 
                         fill="none" style="width: 60%;">
                             <path d="M40.19 80.38C62.3863 80.38 80.38 62.3863 80.38 40.19C80.38 17.9937 62.3863 0 40.19
@@ -225,7 +214,7 @@
                     </a>
 
                     <!-- Contenu de l'image : Youtube -->
-                    <a href="index.php?page=3">
+                    <a href="https://www.youtube.com/channel/UCzEyLf58tjCxfby9GJ77q_g">
                         <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81"
                         fill="none" style="width: 60%;">
                             <path d="M40.19 80.38C62.3863 80.38 80.38 62.3863 80.38 40.19C80.38 17.9937 62.3863 0
