@@ -8,7 +8,7 @@
         $creds_data = json_decode(file_get_contents('creds.json'), true);
         $key = $creds_data['bdd'];
         
-        $id = mysqli_connect("db","user",$key,"itsafecampus");
+        $id = new mysqli("db","user",$key,"itsafecampus");
 
 ?>
     <!-- Conteneur du quizz -->
