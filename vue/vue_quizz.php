@@ -4,7 +4,11 @@
     if((isset($_GET['id_thematique']))&&(isset($_GET['id_formation']))){
         $id_thematique = $_GET['id_thematique'];
         $id_formation = $_GET['id_formation'];
-        $id = mysqli_connect("localhost","root","","itsafecampus");
+
+        $creds_data = json_decode(file_get_contents('creds.json'), true);
+        $key = $creds_data['bdd'];
+        
+        $id = mysqli_connect("db","user",$key,"itsafecampus");
 
 ?>
     <!-- Conteneur du quizz -->
