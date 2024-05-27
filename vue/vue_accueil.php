@@ -6,7 +6,7 @@
             <div class="appTitle">It Safe Campus</div>
 
             <div class="appSlogan">
-                <p>[PROD] La sécurité numérique commence par la connaissance.</p>
+                <p>La sécurité numérique commence par la connaissance.</p>
             </div>
 
             <div style="height: 50%;"></div>
