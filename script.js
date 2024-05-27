@@ -10,7 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 async function callOpenAI(userMessage) {
-  const apiKey = 'sk-proj-iOvHo9hmoP2c1MuOlf5RT3BlbkFJGGUs4YnciDqDkl5Q7KDQ';
+  
+  const creds_key = await fetch('creds.json');
+  const apiKey = (await creds_key.json()).openai;
+
   const url = 'https://api.openai.com/v1/chat/completions';
 
   const response = await fetch(url, {
