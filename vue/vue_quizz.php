@@ -5,6 +5,7 @@
         $id_thematique = $_GET['id_thematique'];
         $id_formation = $_GET['id_formation'];
 
+
         $creds_data = json_decode(file_get_contents('creds.json'), true);
         $key = $creds_data['bdd'];
         
@@ -82,4 +83,5 @@
     </div>
 <?php
     }
+
 ?>
