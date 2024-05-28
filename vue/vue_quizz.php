@@ -53,8 +53,8 @@
                                             $res2 = mysqli_query($id,$req2);
                                             while($ligne2 = mysqli_fetch_assoc($res2)){
                                         ?>
-                                                <input type="radio" id="" name="" value="<?php echo $ligne2['libelleR'];?>">
-                                                <span><?php echo $ligne2['libelleR'];?></label></span><br><br>
+                                                <input type="radio" id="radiobtn" name="" value="<?php echo $ligne2['libelleR'];?>">
+                                                <span><label for="radiobtn"><?php echo $ligne2['libelleR'];?></label></span><br><br>
                                         <?php
                                             }
                                         ?>

@@ -1,6 +1,10 @@
 <h1>Résultat du QCM</h1>
 <?php
-    $id = mysqli_connect("localhost","root","","itsafecampus");
+    $creds_data = json_decode(file_get_contents('creds.json'), true);
+    $key = $creds_data['bdd'];
+    
+    $id = new mysqli("db","user",$key,"itsafecampus");
+    
     $note = 0;
     
     foreach($_POST as $id_question=>$id_reponse){
