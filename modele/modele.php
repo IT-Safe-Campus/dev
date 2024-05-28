@@ -5,7 +5,7 @@
 
 		//fonction qui permet de faire la connexion à la base de donnée
 		public function __construct(){
-
+			
 			$creds_data = json_decode(file_get_contents('creds.json'), true);
                         $key = $creds_data['bdd'];
 			
@@ -24,10 +24,10 @@
 		//methode qui insert des contacts dans la bdd
 		public function insertContact($tab){
 			if($this -> pdo != null){
-				$requete = "INSERT into contact VALUES (null, :nom, :email, :message);";
+				$requete = "INSERT into contact VALUES (null, :nom, :email, :messageC);";
 				$donnees = array (":nom" => $tab["nom"],
 								":email" => $tab["email"],
-								":message" => $tab["message"]);
+								":messageC" => $tab["messageC"]);
 				$insert = $this -> pdo -> prepare ($requete);
 				$insert -> execute ($donnees);
 			}else{
@@ -57,6 +57,18 @@
 		public function selectAllThematiquesAccueil () {
 			if($this -> pdo != null){
 				$requete ="SELECT * from thematique;";
+				$select = $this -> pdo -> prepare ($requete);
+				$select -> execute() ;
+				return $select -> fetchAll();
+			}else{
+				return null;
+			}
+		}
+
+		// methode qui sélectionne toute les données de toute les thématiques
+		public function selectAllQuestions () {
+			if($this -> pdo != null){
+				$requete ="SELECT * from quizz_reponse;";
 				$select = $this -> pdo -> prepare ($requete);
 				$select -> execute() ;
 				return $select -> fetchAll();
@@ -95,6 +107,19 @@
 			if($this -> pdo != null){
 				$requete = "SELECT * from formations where id_thematique = :id_thematique ;";
 				$donnees = array (":id_thematique" => $id_thematique);
+				$select = $this -> pdo -> prepare ($requete);
+				$select -> execute($donnees);
+				return $select -> fetchAll();
+			}else{
+				return null;
+			}
+		}
+
+		//methode qui sélectionne toute les formations en fonction de l'ID de la formation
+		public function selectWhereFormationsQ ($id_formation){
+			if($this -> pdo != null){
+				$requete = "SELECT * from vue_formations where id_formation = :id_formation ;";
+				$donnees = array (":id_formation" => $id_formation);
 				$select = $this -> pdo -> prepare ($requete);
 				$select -> execute($donnees);
 				return $select -> fetchAll();

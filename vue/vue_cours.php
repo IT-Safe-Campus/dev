@@ -106,6 +106,7 @@
     <?php
         }
     ?>
+   
 
     <!-- Conteneur du bouton pour commencer le quizz du cours -->
     <div class="div_bouttonQuizz">
@@ -117,3 +118,15 @@
 <?php
     }
 ?>
+<!-- Intégration de la partie HTML du chatbot -->
+<div id="open-chat-button" onclick="toggleChat()">💬</div>
+<div id="chatbot-container">
+    <button id="close-chat-button" onclick="toggleChat()">Fermer</button>
+    <div id="messages"></div>
+    <div id="user-input-container">
+        <input type="text" id="user-input" placeholder="Entrez votre message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+        <button id="send-button" onclick="sendMessage()">Envoyer</button>
+    </div>
+</div>
+<!-- Intégration du fichier Javascript du chatbot -->
+<script src="script.js"></script>

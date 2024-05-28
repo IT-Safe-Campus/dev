@@ -36,9 +36,19 @@
             return $this -> unModele -> selectAllFormations ();
         }
 
+        //fonction qui permet  de sélectionner toute les formations pour les afficher
+        public function selectAllQuestions (){
+            return $this -> unModele -> selectAllQuestions ();
+        }
+
         //fonction qui permet de sélectionner la formation en fonction de l'ID de la thématique
         public function selectWhereFormations ($id_thematique){
             return $this -> unModele -> selectWhereFormations ($id_thematique);
+        }
+
+        //fonction qui permet de sélectionner la formation en fonction de l'ID de la formation
+        public function selectWhereFormationsQ ($id_formation){
+            return $this -> unModele -> selectWhereFormationsQ ($id_formation);
         }
 
         //fonction qui permet de sélectionner les formations que l'utilisateur à commencer
@@ -57,8 +67,8 @@
         }
 
         //fonction qui permet de sélectionner les reponse en fonction de la question
-        public function selectWhereQuizzReponse ($id_reponse){
-            return $this -> unModele -> selectWhereQuizzReponse ($id_reponse);
+        public function selectWhereQuizzReponse ($id_question){
+            return $this -> unModele -> selectWhereQuizzReponse ($id_question);
         }
 
         //fonction qui permet de sélectionner la vidéo en fonction de la formation sélectionné

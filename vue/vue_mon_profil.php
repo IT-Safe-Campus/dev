@@ -19,7 +19,7 @@
                 //l'utilisateur qui est connecté
                 foreach ($lesinfo as $uneInfo) {
             ?>
-        
+
                 <div class="les_informations">
                     <label>Nom</label>
                     <label style="font-size: 130%;"><?php echo $uneInfo['nom'];?></label><hr>
@@ -30,7 +30,7 @@
                     <label>Date de naissance</label>
                     <label style="font-size: 130%;"><?php echo date("d/m/Y", strtotime($uneInfo['date_naissance']));?>
                     </label><hr>
-                    
+
                     <label>Niveau d'étude</label>
                     <label style="font-size: 130%;"><?php echo $uneInfo['niveau_etude'];?></label><hr>
 
@@ -71,3 +71,15 @@
 <?php
     }
 ?>
+<!-- Intégration de la partie HTML du chatbot -->
+<div id="open-chat-button" onclick="toggleChat()">💬</div>
+<div id="chatbot-container">
+    <button id="close-chat-button" onclick="toggleChat()">Fermer</button>
+    <div id="messages"></div>
+    <div id="user-input-container">
+        <input type="text" id="user-input" placeholder="Entrez votre message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+        <button id="send-button" onclick="sendMessage()">Envoyer</button>
+    </div>
+</div>
+<!-- Intégration du fichier Javascript du chatbot -->
+<script src="script.js"></script>
