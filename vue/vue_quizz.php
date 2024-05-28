@@ -54,7 +54,7 @@
                                             while($ligne2 = mysqli_fetch_assoc($res2)){
                                         ?>
                                                 <input type="radio" id="radiobtn" name="" value="<?php echo $ligne2['libelleR'];?>">
-                                                <span><label for="radiobtn"><?php echo $ligne2['libelleR'];?></label></span><br><br>
+                                                <span><?php echo $ligne2['libelleR'];?></label></span><br><br>
                                         <?php
                                             }
                                         ?>
