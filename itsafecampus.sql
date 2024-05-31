@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 26 mai 2024 à 13:39
+-- Généré le : ven. 31 mai 2024 à 11:42
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.1.13
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `contact` (
   `id_contact` int NOT NULL AUTO_INCREMENT,
   `nom` varchar(30) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `message` longtext NOT NULL,
+  `messageC` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`id_contact`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -128,7 +128,13 @@ CREATE TABLE IF NOT EXISTS `mes_formations` (
 INSERT INTO `mes_formations` (`id_formation`, `id_utilisateur`) VALUES
 (1, 1),
 (1, 4),
-(2, 4);
+(2, 4),
+(3, 1),
+(4, 1),
+(5, 1),
+(6, 1),
+(7, 1),
+(8, 1);
 
 -- --------------------------------------------------------
 
@@ -368,7 +374,7 @@ INSERT INTO `quizz_reponse` (`id_reponse`, `id_question`, `libelleR`, `verite`) 
 (74, 19, 'Elle vous permet d\'accéder à vos mots de passe depuis différents appar', 1),
 (75, 19, 'Elle réduit la sécurité de vos comptes en ligne', 0),
 (76, 19, 'Elle augmente les risques de piratage ', 0),
-(77, 19, 'Pour éviter d\'avoir à mémoriser des mots de passe individuels \r\n', 0),
+(77, 20, 'Pour éviter d\'avoir à mémoriser des mots de passe individuels \r\n', 0),
 (78, 20, 'Pour protéger vos mots de passe en les stockant en clair', 0),
 (79, 20, 'Pour sécuriser l\'accès à vos informations stockées dans le gestionnair', 1),
 (80, 20, 'Pour partager facilement vos mots de passe avec d\'autres personnes', 0),
@@ -653,7 +659,7 @@ CREATE TABLE IF NOT EXISTS `video` (
 --
 
 INSERT INTO `video` (`id_video`, `id_formation`, `url`) VALUES
-(1, 1, 'https://www.youtube.com/embed/kDehTEEoFnE');
+(1, 1, '');
 
 -- --------------------------------------------------------
 
