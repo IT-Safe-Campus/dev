@@ -19,35 +19,39 @@
                 <div class="rangee">
                     <div class="un_input" style="display: flex;margin-left: 3%;gap: 30%;">
                         <div>
-                            <input id="nom" name="nom" type="text" placeholder="Nom"></input>
+                            <input id="nom" name="nom" type="text" placeholder="-- Nom --"></input>
                         </div>
                         <div>
-                            <input id="prenom" name="prenom" type="text" placeholder="Prenom"></input>
+                            <input id="prenom" name="prenom" type="text" placeholder="-- Prenom --"></input>
                         </div>
                     </div><hr>
 
                     <div class="un_input">
-                        <input id="email" name="email" type="email" placeholder="Email"></input>
+                        <input id="email" name="email" type="email" placeholder="-- Email --"></input>
                     </div><hr>
 
                     <div class="un_input">
-                        <input id="mdp" name="mdp" type="password" placeholder="Mot de passe"></input>
+                        <input id="mdp" name="mdp" type="password" placeholder="-- Mot de passe --"></input>
                     </div><hr>
 
                     <div class="un_input">
                         <input id="mdp_verif" name="mdp_verif" type="password"
-                        placeholder="Confirmation mot de passe"></input>
+                        placeholder="-- Confirmation mot de passe --"></input>
                     </div><hr>
 
                     
                     <div class="un_input" style="display: flex;margin-left: 3%;gap: 30%;">
                         <div>
                             <input id="date_naissance" name="date_naissance" type="date"
-                            placeholder="Date de naissance"></input>
+                            placeholder="-- Date de naissance --"></input>
                         </div>
                         <div>
-                            <input id="niveau_etude" name="niveau_etude" type="text"
-                            placeholder="Niveau d'étude"></input>
+                            <select name="niveau_etude" id="niveau_etude">
+                            <option value="">-- Niveau d'étude --</option>
+                            <option value="college">Collège</option>
+                            <option value="lycee">Lycée</option>
+                            <option value="etude_sup">Etude supérieur</option>
+                            </select>
                         </div>
                     </div><hr>
                 </div>
